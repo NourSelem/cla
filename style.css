@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "poppins", sans-serif;
+}
+
+:root{
+    --main-color: #48ca95 ;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 100px auto;
+}
+/*nav*/
+nav{
+    display: flex;
+    justify-content: space-between;align-items: center;
+    background-color:cadetblue;padding: 10px;
+}
+.nav-right ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+nav .nav-right :hover{
+    color: var(--main-color) ;
+}
+ nav .nav-right i{
+   font-size: 25px;text-align: center;
+ }
+ nav  .menu{
+    display: none;
+ }
+.nav-right a{
+    font-size: 20px;
+    color: black;
+}
+/*banner*/
+.banner{
+    display: flex;justify-content: space-between;
+    background:url(img/banner.jpg);
+    background-size: cover;
+    padding:60px;
+}
+.banner-left{
+    color: white;
+}
+.banner .banner-left h3{
+    font-size: 30px;
+    margin-bottom: 20px;;
+}
+.banner-left h1{
+    font-size: 60px;margin-bottom: 20px;
+}
+.banner-left button{
+    margin-top: 20px;
+    color: white;
+    padding:20px 50px;
+    background-color:transparent;
+    border:#fff solid 2px;font-size: 25px;
+    margin-right: 20px;;
+}
+ .banner-left button:hover{
+    background-color:  var(--main-color) ;
+}
+/*section*/
+.computer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.computer1{
+    width: 32%;
+    border: var(--main-color) solid 1px ;
+    margin-right: 15px;
+    border-radius: 10px;
+    text-align:  center;
+}
+.computer1 img
+{
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+.computer1 h3{
+    margin-bottom: 20px;font-size: 30px;
+}
+.computer1 p{
+    font-size: 20px;margin: 20px;
+}
+/*products*/
+
+.product1 h1{
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: auto;min-width: 315px;
+    margin-bottom: 30px;
+}
+.products{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+.product{
+    width: 32%;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.product h2{
+    color: #fff;background-color: black;
+    padding: 5px;
+}
+.product h2:hover{
+    background-color:  var(--main-color);
+}
+.pro button{
+    color: black;
+    border: var(--main-color) solid 1px;
+    color: var(--main-color);
+    font-size: 25px;
+    padding: 10px 60px;
+    text-align: center;
+    background-color: #fff;
+    align-items: center;text-align: center;
+    margin-left: 40%;
+
+    
+}
+.pro button:hover{
+    background-color:  var(--main-color);
+    color: #fff;
+}
+/*banner2*/
+.banner2{
+    background-color: #4f4aa6;
+    display: flex;justify-content: space-between;padding: 100px;
+    
+
+}
+.banner2 h4{
+    color:#fff;
+    font-size: 30px;font-weight: 500;margin-bottom: 30px;
+}
+.banner2 h1{
+    font-size: 80px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 30px;
+
+
+}
+.banner2 button{
+    background-color:  var(--main-color);
+    color: #fff;border: none;
+    padding: 20px;
+    font-size: 25px;
+}
+.banner2 button:hover{
+    background-color: black;color: #fff;
+}
+/*contact*/
+.contact{
+    background-image: url(img/15.jpg);margin-top: 30px;padding-bottom: 50px;
+}
+.contact h2{
+    align-items: center;text-align: center;padding: 80px;
+    color: #fff;margin-bottom: 30px;
+}
+.contact form{
+    text-align: center;
+    border: #fff solid 2px;
+    margin: 50px 450px;padding: 30px;
+}
+form input{
+    width: 80%;
+    background-color: transparent;
+    padding: 20px;margin-bottom: 30px;border: #fff solid 1px;
+}
+form input::placeholder{
+    color: #fff;
+    
+}
+form textarea{
+    width: 80%;
+    background-color: transparent;
+    padding: 20px;margin-bottom: 30px;border: #fff solid 1px;
+}
+form textarea::placeholder{
+    color: #fff;
+    
+}
+form button{
+    border-radius: 20px;
+    padding: 10px 70px;
+    align-items: center;text-align: center;
+    margin-bottom: 50px;
+    margin-right: 0%;
+    background-color:  var(--main-color);
+    color: #fff;
+    border: none;
+    font-size: 25px;
+
+}
+form button:hover{
+    background-color: black;
+}
+/* footer*/
+footer{
+    background-color: black;color: #fff;padding: 0;
+}
+.footer{
+    display: flex;justify-content: space-between;gap: 10px;padding-top: 100px;padding-bottom: 100px;
+
+}
+.cla{
+    width: 24%;
+}
+.cla a{
+    color: #fff;
+    color: black;font-size: 40px;
+}
+.cla i{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+.cla a:hover{
+    background-color:  var(--main-color);
+
+}
+.about-us{
+    width: 24%;
+}
+.footer h1{
+    margin-bottom: 20px;
+}
+.footer >*{
+    margin-bottom: 10px;
+}
+.sletter{
+    width: 24%;
+}
+.contact-us{
+    width: 24%;
+}
+.footer p{
+    font-size: 25px;
+}
+.footer input{
+    padding: 10px 20px;border-radius: 20px;
+}
+.footer input::placeholder{
+    color: #ccc8c8;
+    font-size: 17px;
+}
+.footer button{
+    border-radius: 20px;
+    background-color:  var(--main-color);
+    color: #fff;
+    font-size: 25px;padding:  10px 20px;margin-top: 20px;
+}
+.footer button:hover{
+    background-color: black;
+}
+@media screen and (max-width : 480px){
+    nav{
+        padding: 20px;
+        position: relative;
+    }
+    nav  .nav-right ul {
+        display: none;
+    }
+    nav .menu{
+        display: block;
+        font-size: 30px;
+    }
+  }
+   .nav-right .search{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-right img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .computer{
+        flex-direction: column;
+    }
+    .computer1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .pro{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+   .product1 .pro button{
+        align-items: center;text-align: center;margin-right: 25px;padding: 20px;
+    }
+    .product{
+        width: 100%;
+    }
+    .banner2{
+        flex-direction: column;
+    }
+    .banner2-right img{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .contact form{
+        width: 70%;
+        margin: 30px;
+    }
+    .footer{
+        flex-direction: column;align-items: center;
+    }
+    .cla{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .about-us{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .contact-us{
+        margin-bottom: 30px;
+        width: 100%;text-align: center;
+    }
+    .sletter{
+        margin-bottom: 30px;
+        width: 100%;
+        align-items: center;text-align: center;
+    }
+}

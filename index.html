@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>cla</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="nav-left">
+            <img src="img/logo.png">
+        </div>
+        <div class="nav-right">
+            <ul>
+            <li><a href="#home">Home</a></li>
+           <li> <a href="#about">About</a></li>
+          <li> <a href="#computer">Computer</a></li>
+           <li> <a href="#laptop">Laptop</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <i class='bx bx-search search'></i>
+            <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu menu'></i>
+    </nav>
+    <!--banner-->
+    <div class="banner">
+        <div class="banner-left">
+            <h3>Computer And Laptop
+            </h3>
+            <h1>Accessories
+            </h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+            </p>
+            <button>Buy Now</button>
+            <button>Contact</button>
+        </div>
+        <div class="banner-right">
+            <img src="img/1.png">
+        </div>
+    </div>
+    <section>
+        <div class="computer container">
+            <div class="computer1">
+            <img src="img/2.png">
+                <h3>Computer</h3> 
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+            </div>
+            <div class="computer1">
+                <img src="img/3.png">
+                <h3>Laptop</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+            </div>
+            <div class="computer1">
+                <img src="img/4.png">
+                <h3>Tablet</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--products-->
+    <section>
+        <div class="product1">
+            <h1>OUR <br>PRODUCTS</h1>
+            <div class="pro container">
+            <div class="products">
+
+            </div>
+            <button>See More</button>
+
+        </div>
+
+        </div>
+    </section>
+     <!--banner2-->
+     <div class="banner2">
+        <div class="banner2-left">
+            <h4>Every Computer and laptop
+            </h4>
+            <h1>Up to 40% off !
+            </h1>
+            <button>Shop Now</button>
+        </div>
+        <div class="banner2-right">
+            <img src="img/14.png">
+        </div>
+     </div>
+     <!--contact-->
+     <div class="contact">
+        <h2>CONTACT<br>NOW</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="number" placeholder="Phone Number">
+            <textarea placeholder="Message"></textarea>
+            <button>send</button>
+        </form>
+     </div>
+     <!--footer-->
+     <footer>
+        <div class="footer container">
+            <div class="cla">
+              <div class="image">
+                <img src="img/16.png">
+              </div>
+              <div class="iconss">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+              </div>
+            </div>
+            <div class="about-us">
+                <h1>About Us</h1>
+                <p>dolor sit amet, consectetur
+                    magna aliqua. Ut enim ad
+                    minim veniam,
+                    quisdotempor incididunt r
+                    </p>
+            </div>
+            <div class="contact-us">
+                <h1>Contact Us</h1>
+                <p>dolor sit amet,
+                    consectetur
+                    magna aliqua.
+                    quisdotempor
+                    incididunt ut e</p>
+            </div>
+            <div class="sletter">
+                <h1>Newsletter</h1>
+                <input type="text" placeholder="Enter your name">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+     </footer>
+     <script>
+     
+     let productss=[{
+        id:1,
+        name:'Computer',
+        img:'img/5.png'
+    },
+    {
+        id:2,
+        name:'Laptop',
+        img:'img/6.png'
+    },
+    {
+        id:3,
+        name:'Tablet',
+        img:'img/7.png'
+    },
+    {
+        id:4,
+        name:'Speakers',
+        img:'img/8.png'
+    },
+    {
+        id:5,
+        name:'Internet',
+        img:'img/9.png'
+    },
+    {
+        id:6,
+        name:'Hardisk',
+        img:'img/10.png'
+    },
+    {
+        id:7,
+        name:'Rams',
+        img:'img/11.png'
+    },
+    {
+        id:8,
+        name:'Bettery',
+        img:'img/12.png'
+    },
+    {
+        id:9,
+        name:'Drive',
+        img:'img/13.png'
+    }
+    ]
+    let items = ''
+    productss.map(function(product){
+       items += `
+       <div class="product">
+         <img src=${product.img} alt="">
+         <h2>${product.name}</h2>
+           </div>
+       `
+    
+       document.querySelector(".products").innerHTML = items
+    })
+</script>
+</body></html>
